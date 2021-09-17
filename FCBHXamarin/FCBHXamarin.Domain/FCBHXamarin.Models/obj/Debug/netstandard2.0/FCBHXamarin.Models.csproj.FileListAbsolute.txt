@@ -1,0 +1,10 @@
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\bin\Debug\netstandard2.0\FCBHXamarin.Models.deps.json
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\bin\Debug\netstandard2.0\FCBHXamarin.Models.dll
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\bin\Debug\netstandard2.0\FCBHXamarin.Models.pdb
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\obj\Debug\netstandard2.0\FCBHXamarin.Models.csproj.AssemblyReference.cache
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\obj\Debug\netstandard2.0\FCBHXamarin.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\obj\Debug\netstandard2.0\FCBHXamarin.Models.AssemblyInfoInputs.cache
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\obj\Debug\netstandard2.0\FCBHXamarin.Models.AssemblyInfo.cs
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\obj\Debug\netstandard2.0\FCBHXamarin.Models.csproj.CoreCompileInputs.cache
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\obj\Debug\netstandard2.0\FCBHXamarin.Models.dll
+C:\Users\JCHen\Documents\Projects\FCBHXamarin\FCBHXamarin.Domain\FCBHXamarin.Models\obj\Debug\netstandard2.0\FCBHXamarin.Models.pdb
