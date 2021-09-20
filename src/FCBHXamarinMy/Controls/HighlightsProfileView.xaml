@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="FCBHXamarinMy.Controls.HighlightsProfileView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:FCBHXamarinMy.Helpers">
+    <ContentView.Content>
+        <CollectionView
+            Grid.Row="1"
+            ItemsLayout="VerticalList"
+            VerticalOptions="Start">
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Item One</x:String>
+                    <x:String>Item Two</x:String>
+                    <x:String>Item Three</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="16">
+                        <Frame
+                            Padding="0"
+                            BackgroundColor="{StaticResource CardBackgroundColor}"
+                            CornerRadius="8"
+                            HasShadow="True"
+                            WidthRequest="320"
+                            HeightRequest="120">
+                            <Frame.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Offset="0.1" Color="#8A2387" />
+                                    <GradientStop Offset="0.6" Color="#E94057" />
+                                    <GradientStop Offset="1.0" Color="#F27121" />
+                                </LinearGradientBrush>
+                            </Frame.Background>
+                            <Grid RowDefinitions="120,Auto">
+                                
+                                <Label
+                                    Grid.Row="0"
+                                    Margin="16,4,0,0"
+                                    FontSize="Small"
+                                    Text="FEATURED PLAN"
+                                    TextColor="{StaticResource TextSecondary}" />
+                                <Label
+                                    Grid.Row="0"
+                                    Margin="16,0,0,0"
+                                    FontSize="Medium"
+                                    Text="STRENGTH"
+                                    TextColor="{StaticResource TextPrimary}" />
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentView.Content>
+</ContentView>

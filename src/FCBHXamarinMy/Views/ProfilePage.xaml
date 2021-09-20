@@ -25,10 +25,12 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
             </Style>
             <converters:SelectedIndexColorConverter x:Key="SelectedIndexColorConverter" />
+            <converters:SelectedIndexVisibleConverter x:Key="SelectedIndexVisibleConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <Grid Padding="0,0,0,12" RowDefinitions="Auto,.9*,Auto">
         <Grid
+            Grid.Row="0"
             Margin="{OnPlatform Android='0,24,0,0'}"
             BackgroundColor="{StaticResource CardBackgroundColor}"
             ColumnDefinitions="*,*,*"
@@ -73,6 +75,8 @@
                     TextColor="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexColorConverter}, ConverterParameter='2'}" />
             </StackLayout>
         </Grid>
-        <Controls:NotesProfileView Grid.Row="1" />
+        <Controls:NotesProfileView Grid.Row="1" IsVisible="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexVisibleConverter}, ConverterParameter='0'}" />
+        <Controls:HighlightsProfileView Grid.Row="1" IsVisible="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexVisibleConverter}, ConverterParameter='1'}" />
+        <Controls:NotesProfileView Grid.Row="1" IsVisible="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexVisibleConverter}, ConverterParameter='2'}" />
     </Grid>
 </ContentPage>

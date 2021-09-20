@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3sO/oR6GwJI8yCgWS9L164zYcUTf2fYazP0MJA4R7cnHmluosu+1A8iRpQ58/U8IWtoXri+2c4tF2OiXAdSdnA==",
+  "dgSpecHash": "bOXKS9mr0gCerAppCBj1px2bLZgmJ2ufcC4eFyXmbXbwoAUJeM1e0U58sXj7++z4uS6Ez9aBZLY/EJROFLNH+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj",
+  "projectFilePath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JCHen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\JCHen\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

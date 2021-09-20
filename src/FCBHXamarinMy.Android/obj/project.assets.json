@@ -3006,11 +3006,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy.Android\\FCBHXamarinMy.Android.csproj",
+      "projectUniqueName": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy.Android\\FCBHXamarinMy.Android.csproj",
       "projectName": "FCBHXamarinMy.Android",
-      "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy.Android\\FCBHXamarinMy.Android.csproj",
+      "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy.Android\\FCBHXamarinMy.Android.csproj",
       "packagesPath": "C:\\Users\\JCHen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy.Android\\obj\\",
+      "outputPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3033,8 +3033,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj": {
-              "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj"
+            "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj": {
+              "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj"
             }
           }
         }

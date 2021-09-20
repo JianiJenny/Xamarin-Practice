@@ -1266,11 +1266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj",
+      "projectUniqueName": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj",
       "projectName": "FCBHXamarinMy",
-      "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj",
+      "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj",
       "packagesPath": "C:\\Users\\JCHen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\obj\\",
+      "outputPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

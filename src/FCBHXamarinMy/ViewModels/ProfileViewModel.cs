@@ -26,7 +26,7 @@ namespace FCBHXamarinMy.ViewModels
         {
             if(int.TryParse(index, out int i))
             {
-                selectedCategoryIndex = i;
+                SeletedCategoryIndex = i;
             }
         }
     }

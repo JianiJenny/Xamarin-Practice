@@ -2066,11 +2066,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy.iOS\\FCBHXamarinMy.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy.iOS\\FCBHXamarinMy.iOS.csproj",
       "projectName": "FCBHXamarinMy.iOS",
-      "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy.iOS\\FCBHXamarinMy.iOS.csproj",
+      "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy.iOS\\FCBHXamarinMy.iOS.csproj",
       "packagesPath": "C:\\Users\\JCHen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy.iOS\\obj\\",
+      "outputPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2093,8 +2093,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj": {
-              "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\app-FCBHXamarin\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj"
+            "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj": {
+              "projectPath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy\\FCBHXamarinMy.csproj"
             }
           }
         }
