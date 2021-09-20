@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="FCBHXamarinMy.Controls.NotesProfileView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:FCBHXamarinMy.Helpers">
+    <ContentView.Content>
+        <Grid RowDefinitions="*, Auto">
+            <CarouselView
+                Grid.Row="0"
+                IndicatorView="indicatorView"
+                Loop="False"
+                PeekAreaInsets="20">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Item One</x:String>
+                        <x:String>Item Two</x:String>
+                        <x:String>Item Three</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="0,8,0,8">
+                            <Frame
+                                Padding="0"
+                                CornerRadius="8"
+                                HasShadow="True"
+                                WidthRequest="320">
+                                <Frame.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Offset="0.1" Color="#8A2387" />
+                                        <GradientStop Offset="0.6" Color="#E94057" />
+                                        <GradientStop Offset="1.0" Color="#F27121" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                                <!--
+                                    00: edit icon
+                                    0: Verson number
+                                    1: Bible version
+                                    2: Date
+                                    3: Verse
+                                    4: Note
+                                -->
+                                <Grid
+                                    Padding="0,24,0,0"
+                                    RowDefinitions="Auto,Auto,Auto"
+                                    RowSpacing="20">
+                                    <Label
+                                        Padding="20,0"
+                                        FontFamily="FASolid"
+                                        FontSize="25"
+                                        HorizontalOptions="End"
+                                        Text="{x:Static helpers:FAIcons.Edit}"
+                                        TextColor="White" />
+                                    <Frame
+                                        Grid.Row="1"
+                                        Padding="6"
+                                        BackgroundColor="{StaticResource TextSecondary}"
+                                        HasShadow="False"
+                                        HorizontalOptions="Center">
+                                        <Label
+                                            Margin="16,4,16,4"
+                                            FontSize="36"
+                                            HorizontalOptions="Center"
+                                            Text="Isaiah 28:16"
+                                            TextColor="White" />
+                                    </Frame>
+                                    <StackLayout Grid.Row="2">
+                                        <Label
+                                            FontSize="18"
+                                            HorizontalOptions="Center"
+                                            Text="ENGLISH STANDARD VERSION@"
+                                            TextColor="White" />
+                                        <Label
+                                            FontSize="14"
+                                            HorizontalOptions="Center"
+                                            Text="SEPTERMBER 15, 2021"
+                                            TextColor="White" />
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Row="3"
+                                        Padding="15,0,15,10"
+                                        Spacing="10">
+                                        <Label
+                                            FontSize="Medium"
+                                            HorizontalOptions="Center"
+                                            Text="Therefore this says the Lord God: 'Behold, I lay in Zion a stone for a foundation, a tried stone, a precious cornerstone, a sure foundation."
+                                            TextColor="{StaticResource TextSecondary}" />
+                                        <Label
+                                            FontSize="Medium"
+                                            HorizontalOptions="Center"
+                                            Text="Note: Jesus as the 'Chief Cornerstone' of our faith"
+                                            TextColor="{StaticResource TextPrimary}" />
+                                    </StackLayout>
+
+                                </Grid>
+                            </Frame>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="CurrentItem">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" Value="1.0" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="PreviousItem">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" Value="0.95" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="NextItem">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" Value="0.95" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="DefaultItem">
+                                        <VisualState.Setters>
+                                            <Setter Property="Scale" Value="1.0" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView
+                x:Name="indicatorView"
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                IndicatorColor="#ADB4BD"
+                IndicatorSize="10"
+                SelectedIndicatorColor="#5D6578" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>
