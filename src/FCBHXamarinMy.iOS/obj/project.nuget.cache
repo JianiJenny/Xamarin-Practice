@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dDznlW6ica9fO790xZqjHHjjztJHdGJN88BRlGQZMq++Bvl0NpdWtGHkeNP/C4yATQ+XPE8RcZRQ9NFQjDZuqw==",
+  "dgSpecHash": "tT0uYclazNoJoOaD9pL5jGwbfo8nD9OlOqfMevAmOJkyMxJgJFUfVz9wuLbl9/e5Y9LNB4bgfpFsusLxfpgm4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\JCHen\\Documents\\Projects\\Xamarin-Practice\\src\\FCBHXamarinMy.iOS\\FCBHXamarinMy.iOS.csproj",
   "expectedPackageFiles": [
@@ -17,8 +17,9 @@
     "C:\\Users\\JCHen\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\JCHen\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\JCHen\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
+    "C:\\Users\\JCHen\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.0-pre2\\xamarin.communitytoolkit.1.3.0-pre2.nupkg.sha512",
     "C:\\Users\\JCHen\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\JCHen\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512",
+    "C:\\Users\\JCHen\\.nuget\\packages\\xamarin.forms\\5.0.0.2125\\xamarin.forms.5.0.0.2125.nupkg.sha512",
     "C:\\Users\\JCHen\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []

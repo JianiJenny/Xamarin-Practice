@@ -42,6 +42,7 @@ C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\bin\Debug\n
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\bin\Debug\netstandard2.0\FCBHXamarinMy.dll
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\bin\Debug\netstandard2.0\ref\FCBHXamarinMy.dll
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\bin\Debug\netstandard2.0\FCBHXamarinMy.pdb
+C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\FCBHXamarinMy.csproj.AssemblyReference.cache
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\FCBHXamarinMy.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
@@ -58,4 +59,3 @@ C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\n
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\FCBHXamarinMy.dll
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\ref\FCBHXamarinMy.dll
 C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\FCBHXamarinMy.pdb
-C:\Users\JCHen\Documents\Projects\Xamarin-Practice\src\FCBHXamarinMy\obj\Debug\netstandard2.0\FCBHXamarinMy.csproj.AssemblyReference.cache

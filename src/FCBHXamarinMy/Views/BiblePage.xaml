@@ -1,12 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FCBHXamarinMy.Views.BiblePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+<ContentPage
+    x:Class="FCBHXamarinMy.Views.BiblePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:FCBHXamarinMy.Helpers"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    BackgroundColor="{StaticResource BackgroundColor}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TabViewItemStyle" TargetType="xct:TabViewItem">
+                <Setter Property="TextColor" Value="{StaticResource TextSecondary}" />
+                <Setter Property="TextColorSelected" Value="{StaticResource Accent}" />
+            </Style>
+            <Style x:Key="CategoryIcon" TargetType="Label">
+                <Setter Property="FontFamily" Value="FASolid" />
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="CategoryLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <xct:TabView
+        TabIndicatorColor="{StaticResource Accent}"
+        TabStripBackgroundColor="{StaticResource CardBackgroundColor}"
+        TabStripHeight="60"
+        TabStripPlacement="Top">
+
+        <xct:TabViewItem Style="{StaticResource TabViewItemStyle}" Text="Old Testament">
+            <!--<xct:TabViewItem.ControlTemplate>
+                <StackLayout Padding="16,16,16,0">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SelectCategoryCommand}" CommandParameter="0" />
+                    </StackLayout.GestureRecognizers>
+                    <Label
+                    Style="{StaticResource CategoryIcon}"
+                    Text="{x:Static helpers:FAIcons.StickyNote}"
+                    TextColor="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexColorConverter}, ConverterParameter='0'}" />
+                    <Label
+                    Style="{StaticResource CategoryLabel}"
+                    Text="Notes"
+                    TextColor="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexColorConverter}, ConverterParameter='0'}" />
+                </StackLayout>
+            </xct:TabViewItem.ControlTemplate>-->
+            <Grid>
+                <Label
+                    HorizontalOptions="Center"
+                    Text="TabContent1"
+                    VerticalOptions="Center" />
+            </Grid>
+        </xct:TabViewItem>
+
+        <xct:TabViewItem Style="{StaticResource TabViewItemStyle}" Text="new Testament">
+            <Grid>
+                <Label
+                    HorizontalOptions="Center"
+                    Text="TabContent1"
+                    VerticalOptions="Center" />
+            </Grid>
+        </xct:TabViewItem>
+    </xct:TabView>
 </ContentPage>
