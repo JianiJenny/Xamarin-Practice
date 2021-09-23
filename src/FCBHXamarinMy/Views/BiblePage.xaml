@@ -11,6 +11,7 @@
             <Style x:Key="TabViewItemStyle" TargetType="xct:TabViewItem">
                 <Setter Property="TextColor" Value="{StaticResource TextSecondary}" />
                 <Setter Property="TextColorSelected" Value="{StaticResource Accent}" />
+                <Setter Property="Padding" Value="0,10"/>
             </Style>
             <Style x:Key="CategoryIcon" TargetType="Label">
                 <Setter Property="FontFamily" Value="FASolid" />
@@ -26,25 +27,26 @@
     <xct:TabView
         TabIndicatorColor="{StaticResource Accent}"
         TabStripBackgroundColor="{StaticResource CardBackgroundColor}"
-        TabStripHeight="60"
+        TabStripHeight="120"
         TabStripPlacement="Top">
 
-        <xct:TabViewItem Style="{StaticResource TabViewItemStyle}" Text="Old Testament">
-            <!--<xct:TabViewItem.ControlTemplate>
-                <StackLayout Padding="16,16,16,0">
-                    <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding SelectCategoryCommand}" CommandParameter="0" />
-                    </StackLayout.GestureRecognizers>
-                    <Label
-                    Style="{StaticResource CategoryIcon}"
-                    Text="{x:Static helpers:FAIcons.StickyNote}"
-                    TextColor="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexColorConverter}, ConverterParameter='0'}" />
-                    <Label
-                    Style="{StaticResource CategoryLabel}"
-                    Text="Notes"
-                    TextColor="{Binding SeletedCategoryIndex, Converter={StaticResource SelectedIndexColorConverter}, ConverterParameter='0'}" />
-                </StackLayout>
-            </xct:TabViewItem.ControlTemplate>-->
+        <xct:TabViewItem
+            Style="{StaticResource TabViewItemStyle}"
+            Text="Old Testament">
+            <xct:TabViewItem.Icon>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static helpers:FAIcons.BookOpen}"
+                    Size="36"
+                    Color="{StaticResource TextSecondary}" />
+            </xct:TabViewItem.Icon>
+            <xct:TabViewItem.IconSelected>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static helpers:FAIcons.BookOpen}"
+                    Size="36"
+                    Color="{StaticResource Accent}" />
+            </xct:TabViewItem.IconSelected>
             <Grid>
                 <Label
                     HorizontalOptions="Center"
@@ -53,7 +55,23 @@
             </Grid>
         </xct:TabViewItem>
 
-        <xct:TabViewItem Style="{StaticResource TabViewItemStyle}" Text="new Testament">
+        <xct:TabViewItem
+            Style="{StaticResource TabViewItemStyle}"
+            Text="new Testament">
+            <xct:TabViewItem.Icon>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static helpers:FAIcons.BookReader}"
+                    Size="36"
+                    Color="{StaticResource TextSecondary}" />
+            </xct:TabViewItem.Icon>
+            <xct:TabViewItem.IconSelected>
+                <FontImageSource
+                    FontFamily="FASolid"
+                    Glyph="{x:Static helpers:FAIcons.BookReader}"
+                    Size="36"
+                    Color="{StaticResource Accent}" />
+            </xct:TabViewItem.IconSelected>
             <Grid>
                 <Label
                     HorizontalOptions="Center"
