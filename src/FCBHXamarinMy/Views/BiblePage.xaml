@@ -3,17 +3,22 @@
     x:Class="FCBHXamarinMy.Views.BiblePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Controls="clr-namespace:FCBHXamarinMy.Controls"
+    xmlns:converters="clr-namespace:FCBHXamarinMy.Converters"
     xmlns:helpers="clr-namespace:FCBHXamarinMy.Helpers"
+    xmlns:viewmodels="clr-namespace:FCBHXamarinMy.ViewModels"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:DataType="viewmodels:BibleViewModel"
     BackgroundColor="{StaticResource BackgroundColor}">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="TabViewItemStyle" TargetType="xct:TabViewItem">
                 <Setter Property="TextColor" Value="{StaticResource TextSecondary}" />
                 <Setter Property="TextColorSelected" Value="{StaticResource Accent}" />
-                <Setter Property="Padding" Value="0,10"/>
+                <Setter Property="Padding" Value="0,-4" />
             </Style>
-            <Style x:Key="CategoryIcon" TargetType="Label">
+
+            <!--<Style x:Key="CategoryIcon" TargetType="Label">
                 <Setter Property="FontFamily" Value="FASolid" />
                 <Setter Property="FontSize" Value="28" />
                 <Setter Property="HorizontalOptions" Value="Center" />
@@ -21,30 +26,53 @@
             <Style x:Key="CategoryLabel" TargetType="Label">
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="HorizontalOptions" Value="Center" />
-            </Style>
+            </Style>-->
+            <converters:SelectedIndexColorConverter x:Key="SelectedIndexColorConverter" />
+            <converters:SelectedIndexVisibleConverter x:Key="SelectedIndexVisibleConverter" />
+            <ControlTemplate x:Key="TabItemTemplate">
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image
+                        Grid.Row="0"
+                        Margin="6"
+                        HeightRequest="36"
+                        HorizontalOptions="Center"
+                        Source="{TemplateBinding CurrentIcon}"
+                        VerticalOptions="Center"
+                        WidthRequest="36" />
+                    <Label
+                        Grid.Row="1"
+                        FontSize="{TemplateBinding FontSize}"
+                        HorizontalOptions="Center"
+                        Text="{TemplateBinding Text}"
+                        TextColor="{TemplateBinding CurrentTextColor}" />
+                </Grid>
+            </ControlTemplate>
         </ResourceDictionary>
     </ContentPage.Resources>
     <xct:TabView
-        TabIndicatorColor="{StaticResource Accent}"
         TabStripBackgroundColor="{StaticResource CardBackgroundColor}"
-        TabStripHeight="120"
+        TabStripHeight="110"
         TabStripPlacement="Top">
-
         <xct:TabViewItem
+            ControlTemplate="{StaticResource TabItemTemplate}"
             Style="{StaticResource TabViewItemStyle}"
             Text="Old Testament">
             <xct:TabViewItem.Icon>
                 <FontImageSource
                     FontFamily="FASolid"
                     Glyph="{x:Static helpers:FAIcons.BookOpen}"
-                    Size="36"
+                    Size="42"
                     Color="{StaticResource TextSecondary}" />
             </xct:TabViewItem.Icon>
             <xct:TabViewItem.IconSelected>
                 <FontImageSource
                     FontFamily="FASolid"
                     Glyph="{x:Static helpers:FAIcons.BookOpen}"
-                    Size="36"
+                    Size="42"
                     Color="{StaticResource Accent}" />
             </xct:TabViewItem.IconSelected>
             <Grid>
@@ -56,20 +84,21 @@
         </xct:TabViewItem>
 
         <xct:TabViewItem
+            ControlTemplate="{StaticResource TabItemTemplate}"
             Style="{StaticResource TabViewItemStyle}"
             Text="new Testament">
             <xct:TabViewItem.Icon>
                 <FontImageSource
                     FontFamily="FASolid"
                     Glyph="{x:Static helpers:FAIcons.BookReader}"
-                    Size="36"
+                    Size="42"
                     Color="{StaticResource TextSecondary}" />
             </xct:TabViewItem.Icon>
             <xct:TabViewItem.IconSelected>
                 <FontImageSource
                     FontFamily="FASolid"
                     Glyph="{x:Static helpers:FAIcons.BookReader}"
-                    Size="36"
+                    Size="42"
                     Color="{StaticResource Accent}" />
             </xct:TabViewItem.IconSelected>
             <Grid>
